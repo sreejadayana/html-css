@@ -1,0 +1,254 @@
+**Positioning**
+
+(static, relative, absolute, fixed, sticky)
+
+Positioning: 
+We can position different html elements in any place of the web page. 
+property: position 
+values: static,relative,absolute, fixed, sticky 
+<html>
+    <head>
+         <style>
+        .parentdiv{
+             background-color: yellow;
+             
+        }
+        .childdiv1{
+            background-color: green;
+            position: sticky;
+            /* top:20px;
+            left: 100px; */
+            top:0px;
+            
+          
+        }
+        .childdiv2{
+            background-color: red;
+            
+        }
+        .childdiv3{
+            background-color: blue;
+            
+        }
+         </style>
+    </head>
+     <body>
+                <div class="parentdiv">
+                      <h1>Parent Div</h1>
+                       <div class="childdiv1">
+                           <h1>Child Div One</h1>
+                       </div>
+                       <div class="childdiv2">
+                        <h1>Child Div Two</h1>
+                    </div>
+                      <div class="childdiv3">
+                        <h1>Child Div Three</h1>
+                    </div>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                     <h1>Hello</h1>
+                </div> 
+              
+     </body>
+</html>
+
+Problem Statement: 
+Implement a navbar that sticks on the top of the page 
+Implement a copy right that sticks on the bottom of the page. 
+<html>
+    <head>
+         <style>
+            a{
+                text-decoration: none;
+                margin-left: 50px;
+                color:red;
+                font-size: 40px;
+            }
+            .navbar{
+                        position: sticky;
+                        top:0px;
+                        
+            }
+         </style>
+    </head>
+     <body>
+        <div class="">
+         <div class="navbar">
+         <a href="#">Home</a>
+         <a href="#">Login</a>
+         <a href="#">Register</a>
+         <a href="#">Contact</a>
+        </div>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+          <h1>abc</h1>
+    </div>
+              
+     </body>
+</html>
+
+Display Property:Display Property (block, inline, inline-block, none)
+<html>
+    <head>
+         <style>
+            a{
+                text-decoration: none;
+                font-size: 40px;
+                color:red;
+                /* display: inline-block; */
+                background-color: yellow;
+                width:200px;
+                display: none;
+            }
+         </style>
+    </head>
+     <body>
+          <a href="#">Home Page</a>
+          <!-- <a href="#">Login Page</a>
+          <a href="#">Register Page</a> -->
+              
+     </body>
+</html>
+
+floating elements: 
+float: left, right 
+<html>
+    <head>
+         <style>
+            img{
+                float: left;
+            }
+            span{
+                font-size: 40px;
+                display: block;
+                 top:20px;
+                 position: relative;
+                 left:40px;
+            }
+            a{
+                margin-left: 80px;
+                text-decoration: none;
+            }
+            .abc{
+                position: sticky;
+                top:0px;
+            }
+         </style>
+    </head>
+     <body>
+               <div>
+              
+             <div class="abc">
+               <img src="dl.png"> 
+               
+              <span><a href="#">Home</a><a href="#">Login</a><a href="#">Register</a> <a href="#">Contact Us</a></span>
+            </div>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>    
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>    
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>  
+                          <h1>abc</h1>    
+                           
+                           
+                           
+                 </div>
+     </body>
+</html>
+Collapse
+
+Visibility (visible, hidden, collapse)
+
+Overflow (visible, hidden, scroll, auto)
+
+Z-index and Stacking Context( self learning)
+
+
+
+
+
+
+
+
+

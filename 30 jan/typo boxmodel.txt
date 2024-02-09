@@ -1,0 +1,197 @@
+<html>
+    <head>
+
+        <style>
+
+                 div{
+                      color:red; 
+                      font-family:  cursive;
+                 }
+
+        </style>
+
+    </head>
+
+     <body>
+
+          <h1>ABCED</h1>
+
+         <div>
+            <h1 style="color:initial; font-size: initial; font-family: initial;">Hello World</h1> 
+            <h2>Digital Lync</h2>
+            <p>This is some paragraph!</p>
+
+         </div>
+
+         
+
+         <!-- 
+
+             color 
+             font-size 
+             font-family
+
+         -->
+
+     </body>
+</html>
+
+(Typography in CSS (font-family, font-size, font-weight, line-height, letter-spacing.))
+
+Typography in CSS: 
+
+
+font-family: 
+
+
+In CSS there are five generic font families:
+
+Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. 
+Cursive fonts imitate human handwriting.
+Fantasy fonts are decorative/playful fonts.
+
+
+<html>
+    <head>
+
+        <style>
+
+                    h1{
+
+                         font-family: 'Courier New', Courier, monospace
+
+                    }
+                
+
+        </style>
+
+    </head>
+
+     <body>
+
+        
+            <h1>Digital Lync Technologies</h1>
+
+        
+     </body>
+</html> 
+
+
+Ref:  https://www.w3schools.com/css/css_font_google.asp 
+
+
+font-weight:
+
+<html>
+    <head>
+
+        <style>
+
+                    h1{
+
+                         font-family: 'Courier New', Courier, monospace;
+                         font-weight: 100;
+
+                    }
+                
+
+        </style>
+
+    </head>
+
+     <body>
+
+        
+            <h1>Digital Lync Technologies</h1>
+
+        
+     </body>
+</html> 
+
+line-height: 
+
+line-height: 3; 
+
+
+
+Box Model: Box Model (content, padding, border, margin)
+
+Without box model we cannot create  a layout of a web page. 
+
+For every HTML element, a box is by default created so that it can be aligned 
+any where in the web page. 
+
+It is combination of content + margin + border + padding. 
+
+
+Problem Statement: 
+
+On a Web Page, Highlight some content and display it in the middle of the page. 
+
+
+<html>
+    <head>
+
+        <style>
+
+               h1{
+                  /* border-style: solid;
+                  border-color: red;
+                  border-width: 61px; */
+
+                  border: solid red 61px;
+                  background-color: lightblue;
+                  margin-left: 490px;
+                  margin-right: 450px;
+                  margin-top: 300px;
+                  padding:30px;
+
+               }   
+                
+
+        </style>
+
+    </head>
+
+     <body>
+
+        
+            <h1>60% off on all the products. Offer ends on 31st Jan 2024</h1>
+
+        
+     </body>
+</html> 
+
+
+PS: Align the logo of the web page in top right corner.
+
+<html>
+    <head>
+
+        <style>
+
+             img{
+                margin-left: 1468px;
+                margin-top: 41px;
+             } 
+
+             h1{
+                margin-left: 1468px;
+                padding-top:20px
+             }
+        </style>
+
+    </head>
+
+     <body>
+
+        
+        <img src="logo.png">
+        <h1>Address: Hyderabad</h1>
+
+        
+     </body>
+</html>
+

@@ -1,0 +1,192 @@
+ Units of Measurements in CSS: 
+
+Ref: https://elementor.com/help/whats-the-difference-between-px-em-rem-vw-and-vh/
+
+The Measurement of css drills down to pixels.
+
+1. Absolute : Exact Measurement
+
+cm	centimeters
+mm	millimeters
+in	inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt	points (1pt = 1/72 of 1in)
+pc	picas (1pc = 12 pt)
+
+32px -> 600px *  400px 
+
+2. Relative : 
+
+em	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	Relative to the x-height of the current font (rarely used)	
+ch	Relative to the width of the "0" (zero)	
+rem	Relative to font-size of the root element	
+vw	Relative to 1% of the width of the viewport*	
+vh	Relative to 1% of the height of the viewport*	
+vmin	Relative to 1% of viewport's* smaller dimension	
+vmax	Relative to 1% of viewport's* larger dimension	
+%	Relative to the parent element
+
+
+
+
+
+px:  used for absolute Measurement. It becomes relative when shows in different 
+screens. 
+
+it is best suited if there is no responsiveness required. 
+
+<html>
+    <head>
+
+         <style>
+               .parent{
+
+                      background-color: red;
+                      width:1000px;
+                      height:500px;   
+
+               }
+               .child{
+                background-color: green;
+                width:10px;
+                height:100px;
+               }
+
+         </style>
+
+    </head>
+
+     <body>
+
+         <div class="parent">
+
+             <div class="child">
+                         
+               </div>
+
+         </div>
+
+     </body>
+</html>
+
+
+
+%:  when we have parent - child relationship, if the child element wants to derive 
+the measurements based on parent element, then we can use % (percentage). 
+
+<html>
+    <head>
+
+         <style>
+               .parent{
+
+                      background-color: red;
+                      width:800px;
+                      height:500px;   
+
+               }
+               .child{
+                background-color: green;
+                width:10%; /* 100*/
+                height:10%; 
+               }
+
+         </style>
+
+    </head>
+
+     <body>
+
+         <div class="parent">
+
+             <div class="child">
+                         
+               </div>
+
+         </div>
+
+     </body>
+</html>
+
+em, rem, vh, vw: 
+
+
+em for element -> 
+
+16px -> 1em = 16 px 
+        2em = 2 * 16 px 
+        2.3em =2.3 * 16px 
+
+em, rem, vw,vh,% helps us in providing responsiveness to the websites.
+
+
+If we want to depend on parent element's font-size then we can use em. 
+
+if we want to depend on root element's font-size then we can use rem. 
+
+<html>
+    <head>
+
+         <style>
+              html{
+                font-size: 100px;
+              }
+                 .x{
+                    font-size: 40px;
+                 }
+                 .y{
+                     background-color: green;
+                     width: 4em;
+                     /* height: 4em; */
+                     height: 2rem;
+
+                 }
+              
+         </style>
+
+    </head>
+
+     <body>
+
+            <div class="x">
+                        Parent Content
+                 <div class="y">
+                          Child Content
+                 </div>
+            </div>
+
+     </body>
+</html>
+
+Question:  When we already have vw,vh whey we need media queries? 
+
+vw,vh: 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  font-size: 4vw;
+}
+
+img{
+    width: 60vw;
+    height: 50vh;
+}
+
+</style>
+</head>
+<body>
+
+  <img src="abc.png">
+</body>
+</html>
+
+
+
+
+
+
